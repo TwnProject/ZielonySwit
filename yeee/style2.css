@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow: auto;
+    justify-content: center;
+}
+.container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #0f8f163f;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+ button {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #006809;
+}
+.forecast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hourly {
+    width: 22%;
+    background-color: #25ff7c;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+.hourly {
+width: 40%;
+}
+}
+.hourly h3 {
+    margin: 0;
+    font-size: 18px;
+}
+.hourly p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+#city {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #006809;
+    box-sizing: border-box;
+}
+body {
+    background-color: #c8f160 ;
+    margin:0px;
+}
+.top {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #40783a;
+    background-image: linear-gradient(to bottom right, #40783a, #4da843);
+}
+
+.button,.logo{
+    float: left;
+}
+.button, .buttonb
+{
+    padding-top:15px;
+    padding-bottom:15px;
+    width: 15%;
+    margin-top: 6px;
+    float: left;
+    border-radius: 10px;
+
+    color:white;
+    background-color: #7DAB44;
+    text-align: center;
+    text-decoration: none;
+}
+.button {
+    margin-left: 4%;
+}
+.logo{
+    margin:auto;
+    margin-left: 10%;
+    margin-right: 8%;
+}
+
+a:hover{
+    animation-name: animacja;
+    animation-duration: 1s;
+    background-color:rgb(191, 255, 188);
+}
+@keyframes animacja {
+    0%   {background-color:#7DAB44;}
+    100% {background-color:rgb(191, 255, 188);}
+  }
+
+
+.pasek {
+    width: 80%;
+    height: 50px;
+    margin: 0 auto;
+}
+.rodzaj {
+    width: 25%;
+    height: 50px;
+    background-color: grey;
+    text-align: center;
+    float: left;
+    margin-top: 10px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+a {
+    color: black;
+}
+.text {
+    width:100%;
+    text-align:center;
+    padding-top: 10px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.containergame {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.game-area {
+    display: flex;
+    align-items: center;
+}
+
+.conveyor {
+    position: relative;
+    width: 150px;
+    height: 400px;
+    background-color: #ddd;
+    border: 2px solid #999;
+    overflow: hidden;
+}
+
+#trash-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    animation: moveConveyor 6s linear infinite;
+}
+
+@keyframes moveConveyor {
+    0% { top: -100%; }
+    100% { top: 100%; }
+}
+
+.bin-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 20px;
+}
+
+.bin {
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bin img {
+    width: 100%;
+    height: auto;
+}
+
+.trash {
+    width: 50px;
+    margin: 0 auto;
+    cursor: grab;
+    opacity: 0.9; 
+}
+.trash.dragging {
+    opacity: 0.5;
+}
+
+.dragging {
+    cursor: grabbing;
+}
+#countdown-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 5rem;
+    font-weight: bold;
+    display: none; 
+}
+#countdown {
+    animation: countdown-fade 1s linear;
+}
+
+@keyframes countdown-fade {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}

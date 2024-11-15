@@ -1,0 +1,125 @@
+body {
+    background-color: #c8f160 ;
+    margin:0px;
+}
+.top {
+    position: relative;
+    height: 60px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #40783a;
+    background-image: linear-gradient(to bottom right, #40783a, #4da843);
+}
+.main{
+    background-color: #aad751;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.button,.logo{
+    float: left;
+}
+.button
+{
+    padding-top:15px;
+    padding-bottom:15px;
+    width: 15%;
+    margin-top: 6px;
+    margin-left: 2%;
+    border-radius: 5px;
+    display: inline-block;
+    color:white;
+    background-color: #7DAB44;
+    text-align: center;
+    text-decoration: none;
+}
+.logo{
+    margin:auto;
+    margin-left: 14%;
+    margin-right: 12%;
+}
+
+.top .button:hover{
+    animation-name: animacja;
+    animation-duration: 1s;
+    background-color:white;
+    
+}
+@keyframes animacja {
+    0%   {background-color:#7DAB44;}
+    100% {background-color:white; color:#7DAB44;}
+  }
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(64, 20px); 
+    gap: 1px;
+    margin-bottom: 20px;
+    margin:0 auto;
+    margin-bottom: 100px;
+}
+
+
+.pixel {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    cursor: pointer;
+    text-align: center;
+    font-size: 15px;
+
+    color: #888;
+}
+
+.inactive_pixel {
+    cursor: default;
+    background-color: gainsboro;
+}
+
+
+.color-picker {
+    display: flex;
+    position: relative;
+    top:10px;
+    left: 10px;
+    margin-bottom: 20px;
+    gap: 10px;
+    color:red;
+    font-weight: bold;
+    text-align: center;
+}
+
+.color {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.button, .buttonb
+{
+    padding-top:15px;
+    padding-bottom:15px;
+    width: 15%;
+    margin-top: 6px;
+    float: left;
+    border-radius: 10px;
+
+    color:white;
+    background-color: #7DAB44;
+    text-align: center;
+    text-decoration: none;
+}
+
+#clear-button, #move{
+    padding: 10px;
+    background-color: #7DAB44;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+

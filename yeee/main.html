@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segregowanie Śmieci</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="top">
+        <div><a href="zmieszane.html" class="button">Główna</a></div>
+        <div><a href="planeta.html" class="button">Kolorowanka</a></div>
+        <div class="logo"><a href="zmieszane.html"><img src="Logo.png" alt="Logo.png" width="48px" height="48px"></a> </div>
+        <div><a href="main.html" class="buttonb">Gra recykling</a></div>
+        <div><a href="Pogoda.html" class="button">Pogoda</a></div>
+    </div>
+    <div class="containergame">
+        <div id="countdown-overlay">
+            <span id="countdown"></span>
+        </div>
+
+        <h2>Punkty: <span id="score">0</span></h2>
+
+        <div class="game-area">
+            <div class="bin-container">
+                <div class="bin" id="compost-bin">
+                    <img src="brown-recycling-bin.png" alt="Kompost">
+                    <p>Kompost</p>
+                </div>
+                <div class="bin" id="recycle-bin">
+                    <img src="green-recycling-bin.png" alt="Szklo">
+                    <p>Szkło</p>
+                </div>
+            </div>
+
+            <div class="conveyor">
+                <div id="trash-container"></div>
+            </div>
+
+            <div class="bin-container">
+                <div class="bin" id="landfill-bin">
+                    <img src="yellow-recycling-bin.png" alt="plastik_metal">
+                    <p>Tworzywa sztuczne, metal</p>
+                </div>
+                <div class="bin" id="electronics-bin">
+                    <img src="blue-recycling-bin.png" alt="Papier">
+                    <p>Papier</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

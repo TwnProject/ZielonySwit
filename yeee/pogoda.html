@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prognoza pogody</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="top">
+        <div><a href="zmieszane.html" class="button">Główna</a></div>
+        <div><a href="planeta.html" class="button">Kolorowanka</a></div>
+        <div class="logo"><a href="zmieszane.html"><img src="Logo.png" alt="Logo.png" width="48px" height="48px"></a> </div>
+        <div><a href="main.html" class="buttonb">Gra recykling</a></div>
+        <div><a href="Pogoda.html" class="button">Pogoda</a></div>
+    </div>
+<div class="container">
+    <h1>Prognoza pogody</h1>
+    <input type="text" id="city" placeholder="Wpisz miasto">
+    <button onclick="getWeather()">Pokaż Pogode</button>
+
+    <div id="weather-info"></div>
+    <div id="hourly-forecast" class="forecast"></div>
+</div>
+
+<script src="script2.js"></script>
+
+</body>
+</html>
